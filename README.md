@@ -15,6 +15,8 @@ g++-14 -lz -o cluster_buster cluster_buster.cpp
 cluster_buster swissprot_cluster_all_seqs.fasta outdir 50
 ```
 
+The `minimum_cluster_size` argument ensures that no one file has less than that number of FASTA records. It will not break up a cluster.
+
 
 ## Note
 `Cluster Buster` makes use of the `kseq` library from Heng Li!
